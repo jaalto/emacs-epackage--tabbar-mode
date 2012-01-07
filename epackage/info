@@ -1,0 +1,41 @@
+Package: tabbar-mode
+Section: extensions
+License: GPL-2+
+Depends: emacs (>= 22)
+Status: unmaintained unsafe
+Archive:
+Compat:
+Maintainer: Jari Aalto <jari.aalto@cante.net>
+Bugs:
+Upstream: David Ponce <david@dponce.com>
+Upstream-Bugs:
+Vcs-Type: cvs
+Vcs-Url: :pserver:anonymous@emhacks.cvs.sourceforge.net:/cvsroot/emhacks co emhacks
+Vcs-Browser: http://emhacks.cvs.sourceforge.net/viewvc/emhacks/emhacks/
+Homepage:
+Wiki: http://www.emacswiki.org/emacs/TabBarMode
+Commentary: tabbar.el
+Description: mode to display a tab bar in the header line
+ A minor mode to display a tab bar in the header line. You can
+ use the mouse to click on a tab and select it. Also, three buttons
+ are displayed on the left side of the tab bar in this order: the
+ "home", "scroll left", and "scroll right" buttons. The "home" button
+ is a general purpose button used to change something on the tab bar.
+ The scroll left and scroll right buttons are used to scroll tabs
+ horizontally. Tabs can be divided up into groups to maintain several
+ sets of tabs at the same time (see also the chapter "Core" below for
+ more details on tab grouping). Only one group is displayed on the tab
+ bar, and the "home" button, for example, can be used to navigate
+ through the different groups, to show different tab bars.
+ .
+ The Basic commands:
+ .
+    M-x tabbar-mode		Global minor mode
+    M-x tabbar-local-mode	Local to current buffer
+    M-x tabbar-mwheel-mode	Use mouse wheel to navigate
+ .
+ Unsafe: defines global keybidings on load:
+ C-<Pg up, Pg down, home, end, cursor keys, f10>. To relocate keys,
+ define tabbar-prefix-map before loading.
+ .
+ Note: 2012-01-07 the code hasn't been touched since 2006.
